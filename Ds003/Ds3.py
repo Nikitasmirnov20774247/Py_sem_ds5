@@ -8,7 +8,7 @@ def print_result():
     word = word.split()
     print('Результат формирования списка:')
     print(word)
-    print('Результат фильтрации (удалени слов с одержанием "абв") списка:')
+    print('Результат фильтрации (удаление слов с одержанием "абв") списка:')
     result = list(filter(word_delete,word))
     print(result)
 
