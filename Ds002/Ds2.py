@@ -27,13 +27,13 @@ try:
         return decoding
 
     def write_result():
-        with open('text_encode_RLE.txt', 'w') as data:
+        with open('Ds002/text_encode_RLE.txt', 'w') as data:
             data.write(input('Напишите текст необходимый для сжатия: '))
 
-        with open('text_encode_RLE.txt', 'r') as file:
+        with open('Ds002/text_encode_RLE.txt', 'r') as file:
             decoding = file.read()
 
-        with open('text_decode_RLE.txt', 'w') as file:
+        with open('Ds002/text_decode_RLE.txt', 'w') as file:
             encoding = encode(decoding)
             file.write(encoding)
 
