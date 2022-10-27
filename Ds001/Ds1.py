@@ -6,7 +6,7 @@ try:
 
     def player_step(player, max):
         take = int(input(f'{player} возьмите конфеты (от 1 до {max}): '))
-        while take < 0 or take > max:
+        while take < 1 or take > max:
             take = int(input(f'{player} введите корректное количество конфет (от 1 до {max}): '))
         return take
     
